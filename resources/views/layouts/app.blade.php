@@ -12,7 +12,8 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/Nav.js'])
+
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-white white">
@@ -20,26 +21,7 @@
             @include('layouts.navigation')
         </div>
         
-        <script>
-            function handleResize() {
-                const responsiveDiv = document.getElementById('responsiveDiv');
-                if (window.innerWidth < 640) {
-                  
-                    responsiveDiv.classList.remove('mb-10');
-                    responsiveDiv.classList.remove('mt-10');
-
-
-                } else {
-                    responsiveDiv.classList.add('mb-10');
-                    responsiveDiv.classList.add('mt-10');
-                }
-            }
         
-            // Ejecutar al cargar y cuando se redimensiona la ventana
-            window.addEventListener('resize', handleResize);
-            handleResize();
-        </script>
-
             <!-- Page Heading -->
             @isset($header)
                 <header class="bg-white dark:bg-gray-800 shadow">
