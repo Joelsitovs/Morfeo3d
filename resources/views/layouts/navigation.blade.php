@@ -1,6 +1,6 @@
 <div class="flex justify-center items-center   ">
 
-    <nav x-data="{ open: false }" class="bg-transparentBlack rounded-2xl  h-[auto] w-[1230px] " id ="responsiveDiv2">
+    <nav x-data="{ open: false }" class="bg-transparentBlack rounded-3xl  h-[auto] w-[1230px] " id ="responsiveDiv2">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
@@ -28,7 +28,7 @@
                     <div class="hidden sm:flex sm:items-center sm:ms-6">
 
                         @auth
-                            <x-dropdown align="right" width="w-auto" :contentClasses="'py-0 bg-gris text-white rounded-lg shadow-md'">
+                            <x-dropdown width="w-auto" :contentClasses="'py-0 bg-gris text-white rounded-lg shadow-md'">
                                 <x-slot name="trigger">
                                     <button class="bg-red-500 rounded-2xl w-10 h-10 flex items-center justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"

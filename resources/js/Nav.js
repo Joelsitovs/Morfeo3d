@@ -2,9 +2,9 @@
 function handleResize() {
     const responsiveDiv2 = document.getElementById('responsiveDiv2');
     if (window.innerWidth < 640) {
-        responsiveDiv2.classList.remove('rounded-2xl');
+        responsiveDiv2.classList.remove('rounded-3xl');
     } else {
-       responsiveDiv2.classList.add('rounded-2xl');
+       responsiveDiv2.classList.add('rounded-3xl');
     }
 
     const responsiveDiv = document.getElementById('responsiveDiv');

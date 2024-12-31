@@ -1,15 +1,15 @@
 <?php
 
 use App\Http\Controllers\ChirpController;
+use App\Http\Controllers\Morfeo3dController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
 
 // Ruta principal
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', [Morfeo3dController::class, 'index'])->name('morfeo3d.index');
+;
 
 // Ruta del dashboard
 Route::get('/dashboard', function () {
