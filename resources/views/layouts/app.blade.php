@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+       
+       
+
         <title>{{ config('app.name', 'Morfeo3D') }}</title>
         <link rel="shortcut icon" sizes="192x192" href="{{ asset('storage/Slice.svg') }}" >
         <!-- Fonts -->
@@ -20,8 +23,7 @@
             <div class="mt-10 bg-white mb-10" id="responsiveDiv">
             @include('layouts.navigation')
             </div>
-           
-           
+      
         
             <!-- Page Heading -->
        

@@ -8,6 +8,7 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/Nav.js', // Agregado aquí
+                'resources/js/main.js', // Agregado aquí
             ],
             refresh: true,
         }),

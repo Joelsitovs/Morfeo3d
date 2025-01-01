@@ -3,6 +3,7 @@
 use App\Http\Controllers\ChirpController;
 use App\Http\Controllers\Morfeo3dController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\FileUploadController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
@@ -36,3 +37,9 @@ Route::post('/chirps', [ChirpController::class, 'store'])->name('chirps.store');
 Route::get('/chirps/{chirp}/edit', [ChirpController::class, 'edit'])->name('chirps.edit');
 Route::put('/chirps/{chirp}', [ChirpController::class, 'update'])->name('chirps.update');
 Route::delete('/chirps/{chirp}', [ChirpController::class, 'destroy'])->name('chirps.destroy');
+
+Route::post('upload',[FileUploadController::class,'upload'])->name('file.upload');
+
+Route::get ('/canvas', function () {
+    return view('morfeo3d.canvas');
+});
