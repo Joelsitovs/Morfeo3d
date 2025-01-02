@@ -46,10 +46,12 @@ let myModel;
 rgbeLoader.load(
     "./storage/uploads/MR_INT-005_WhiteNeons_NAD.hdr",
     function (texture) {
+        console.log("HDR Texture loaded:", texture); 
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.environment = texture;
 
         gltfLoader.load("./storage/uploads/3d.gltf", function (gltf) {
+            console.log("GLTF Model loaded:", gltf);
             const model = gltf.scene;
 
             // Rotar el modelo si es necesario
@@ -106,7 +108,7 @@ window.addEventListener("keydown", toggleGridVisibility); // Escuchar la tecla '
 
 function animate(time) {
   
-    console.log(camera.position);
+
 
     renderer.render(scene, camera);
 }
